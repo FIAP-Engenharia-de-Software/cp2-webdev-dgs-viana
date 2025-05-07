@@ -10,8 +10,36 @@
 // - Executar a operação correta e retornar o resultado;
 
 function calcular(num1, num2, operador) {
-  // TODO: implementar função
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
 }
+if(operador === '/' && num2 === 0 ){
+  return "Erro:divisão por zero";
+}
+switch (operador){
+  case'+':
+  return num1+num2;
+  case'-':
+  return num1-num2;
+  case'*':
+  return num1*num2;
+  case'/':
+  return num1/num2;
+  default:
+    "Erro: parâmetros inválidos";
+ 
+}
+}
+
+  //feito
+  
+
+
+
+  
+
+
+
+
 
 
 //NÃO REMOVA O CÓDIGO ABAIXO
